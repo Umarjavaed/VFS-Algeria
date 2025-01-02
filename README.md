@@ -47,8 +47,6 @@ Welcome to the **Automated Appointment Booking Script** repository! This script 
      pip install -r requirements.txt
      ```
 
-3. **Chromedriver:**
-   - Download and configure the appropriate Chromedriver version for your system.
 
 ### 🛠️ **Setup**
 
@@ -58,22 +56,10 @@ Welcome to the **Automated Appointment Booking Script** repository! This script 
    cd VFS-Algeria
    ```
 
-2. **Configure the Script:**
-   - Update the configuration file (`config.json`) with your details:
-     ```json
-     {
-       "username": "your_email@example.com",
-       "password": "your_secure_password",
-       "appointment_details": {
-         "date": "yyyy-mm-dd",
-         "time": "hh:mm"
-       }
-     }
-     ```
 
-3. **Run the Script:**
+2. **Run the Script:**
    ```bash
-   python book_appointment.py
+   python main.py
    ```
 
 ---
@@ -84,7 +70,7 @@ Welcome to the **Automated Appointment Booking Script** repository! This script 
    - The script logs in to [agendamentos.mne.gov.pt](https://agendamentos.mne.gov.pt/en/login) using your credentials.
 
 2. **Appointment Search:**
-   - Scans available slots and selects the desired date and time.
+   - Scans available slots and selects the earlist date and time.
 
 3. **Confirmation:**
    - Completes the booking process and sends a confirmation message.
@@ -126,11 +112,6 @@ For queries, suggestions, or assistance:
 
 ---
 
-## 📝 **License**
-
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
-
----
 
 ## 🌟 **Show Your Support**
 
