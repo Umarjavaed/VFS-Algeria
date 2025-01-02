@@ -26,10 +26,21 @@ Welcome to the **Automated Appointment Booking Script** repository! This script 
 ## 📂 **Repository Structure**
 
 ```plaintext
-├── script/                 # Main script files
-├── README.md               # Documentation (this file)
-├── LICENSE                 # License file
-└── examples/               # Example usage scenarios
+  ├──    /04.13_0
+├──    /4.11.0_0
+├──    /__pycache__/
+├──    /proxy_extension/
+├──    README.md
+├──    check.py
+├──    checking.crx
+├──    credentials.xlsx
+├──    dependencies.py
+├──    dummy.py
+├──    ext.py
+├──    extra.txt
+├──    main.py
+├──    prox.py
+├──    proxies.txt
 ```
 
 ---
