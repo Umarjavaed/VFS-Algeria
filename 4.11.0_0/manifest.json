@@ -1,0 +1,51 @@
+{
+   "action": {
+      "default_icon": "icons/icon-grey.png",
+      "default_popup": "popup/index.html",
+      "default_title": "Urban VPN"
+   },
+   "background": {
+      "service_worker": "service-worker/index.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "ad-blocker/content.js" ],
+      "match_about_blank": true,
+      "matches": [ "https://*/*", "http://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "content/content.js" ],
+      "matches": [ "https://*/*", "http://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "differential_fingerprint": "1.11f10c4ee80e6e435be7b570a1c8d39f88002fe779723cdc71b6bf558f252a70",
+   "homepage_url": "https://www.urban-vpn.com/",
+   "host_permissions": [ "\u003Call_urls>", "https://*.bugsnag.com/*" ],
+   "icons": {
+      "128": "icons/icon-128.png",
+      "16": "icons/icon.png",
+      "48": "icons/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhyI83umfuyo8vQ2YaP4f9ov8SsfG32ljJs+XTYE7v6zWj5n6qmy9UzikJkGLpg5W3gtJIbBzetHcBfDH/00FLSnh0GZz5F0dZV2a9zMGjQbj4JaBF7WSKnxogRnRnrZIOoeM0D6TmrgZkPOFeD1FSHsWDWWusQb2HgnfrqxiKvLovmpYfNgmzq6WedYbE3xg0PLS7kULvwC9cGJmDwv/eDkTcUUSM8EmP3vR4hJaxSkmlWLQUedhNgkqUenkleCAUkpgZ4te+KqV9EaPbsxH9oirDn4obEN2PQr0mQEbcuZEwqqfvlnx5VZLjWLJHFOEetcaj9u3p6yTUxyQh5SsrwIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "110.0",
+   "name": "__MSG_appName__",
+   "permissions": [ "webRequestAuthProvider", "offscreen", "alarms", "management", "proxy", "scripting", "storage", "tabs", "webNavigation", "webRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.11.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "/content/anti-male-ware-notification/index.html", "/content/safe-price-check-notification/index.html", "/content/vpn-notification/index.html", "/content/terminated-connection-notification/index.html" ]
+   }, {
+      "matches": [ "https://*/*", "http://*/*" ],
+      "resources": [ "/content/location/location.js" ]
+   }, {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "/libs/extend-native-history-api.js", "/libs/requests.js" ]
+   }, {
+      "matches": [ "*://*/*" ],
+      "resources": [ "executers/fr-co.js", "executers/vi-ig-tr.js", "executers/vi-ln-tr.js", "executers/vi-oo-tr.js", "executers/vi-pn-tr.js", "executers/vi-rd-tr.js", "executers/vi-tr.js", "executers/vi-tt-tr.js" ]
+   } ]
+}
