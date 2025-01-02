@@ -26,7 +26,7 @@ Welcome to the **Automated Appointment Booking Script** repository! This script 
 ## 📂 **Repository Structure**
 
 ```plaintext
-  ├──    /04.13_0
+├──    /04.13_0
 ├──    /4.11.0_0
 ├──    /__pycache__/
 ├──    /proxy_extension/
